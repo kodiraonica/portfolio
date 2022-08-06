@@ -20,35 +20,35 @@
     <title>Portfolio website</title>
   </head>
   <body>
-    <main class="vh-100 flex">
-      <aside class="vh-100 flex content-center pt-50">
+    <main class="flex">
+      <aside class="flex content-center pt-50">
         <ul class="list">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </aside>
-      <section class="gray-background vh-100">
-        <div class="vcenter">
-          <div class="flex content-center items-center">
-            <div class="circle">
-              <div class="img"></div>
-            </div>
+
+      <section class="gray-background pb-50 vh-100">
+        <div class="mt-50">
+          <div class="flex flex-column">
+            <h1 class="text-left m-0">Send me a message any time!</h1>
           </div>
-          <div class="flex content-center">
-            <h1>Adam Williams</h1>
-          </div>
-          <div class="flex content-center">
-            <p>
-              Front end developer with huge crush on React and CSS transitions.
-              Two years of experience developing large scale SAAS applications.
-            </p>
-          </div>
-          <div class="flex content-center">
-            <i class="fa fa-github-alt" aria-hidden="true"></i>
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+          <div class="flex flex-column mt-50">
+            <form action="">
+              <input type="text" name="" id="" placeholder="Your Name" />
+              <input type="email" name="" id="" placeholder="Your Email" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="button">Send</button>
+            </form>
           </div>
         </div>
       </section>
