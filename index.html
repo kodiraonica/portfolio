@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Antonijina portfolio stranica</title>
   </head>
 
   <body>
     <main>
-      <aside id="aside">
-        <ul>
-          <li class="nav-item" id="one">
-            <a href="./index.html">Home</a>
-          </li>
+      <aside>
+        <nav>
+          <ul class="list flex">
+            <li class="nav-item" id="one">
+              <a href="./index.html" class="active">Home</a>
+            </li>
 
-          <li class="nav-item">
-            <a href="./about.html">About</a>
-          </li>
+            <li class="nav-item">
+              <a href="./about.html">About</a>
+            </li>
 
-          <li class="nav-item">
-            <a href="./portfolio.html">Portfolio</a>
-          </li>
+            <li class="nav-item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
 
-          <li class="nav-item">
-            <a href="./contact.html">Kontakt</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </aside>
 
-      <section>
-        <img src="./2.png" alt="moja_slika" />
-        <h1>Antonija Simic</h1>
+      <section class="h-full">
+        <div class="flex items-center flex-column">
+          <div class="circle"></div>
+          <h1>Antonija Simic</h1>
+          <p>
+            Front end developer with a huge crush on React and CSS transitions.
+            Two years of experience developing large scale SASS applications.
+          </p>
+          <ul class="flex">
+            <li class="mx-4">
+              <a href="https://github.com/tonkec" class="text-black">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
 
-        <p>
-          Front end developer with huge crush on React and CSS transitions. Two
-          years of experience developing large scale SAAS applications.
-        </p>
+            <li class="mx-4">
+              <a href="mailto:antonija1023@gmail.com" class="text-black">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </li>
 
-        <div class="wrapper"></div>
+            <li class="mx-4">
+              <a href="https://codepen.io/tonkec" class="text-black">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

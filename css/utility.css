@@ -1,0 +1,48 @@
+.flex {
+  display: flex;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.mx-4 {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.grid {
+  display: grid;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.h-full {
+  height: 100vh;
+}

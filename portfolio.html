@@ -1,42 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./main.css" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Antonijina portfolio stranica | Portfolio</title>
   </head>
   <body>
     <main>
       <aside>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        <nav>
+          <ul class="list flex">
+            <li class="nav-item" id="one">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./portfolio.html" class="active">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </aside>
 
       <section>
-        <h2>Here is the list of the projects I am the most proud of:</h2>
+        <h2 class="mb-40">
+          Here is the list of the projects I am the most proud of:
+        </h2>
 
-        <ul>
-          <li>
-            <a href="https://example.com/" target="_blank"
-              >My 1st amazing project</a
-            >
-          </li>
+        <div class="grid">
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              accusantium.
+            </p>
 
-          <li>
-            <a href="https://example.com/" target="_blank"
-              >My 2nd amazing project</a
-            >
-          </li>
+            <a href="#">See more</a>
+          </div>
 
-          <li>
-            <a href="https://example.com/" target="_blank"
-              >My 3rd amazing project</a
-            >
-          </li>
-        </ul>
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+        </div>
+
+        <h2 class="mb-40 mt-20">
+          Here is the list of the open sourced projects I am the most proud of:
+        </h2>
+
+        <div class="grid">
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              accusantium.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+
+          <div class="grid-item">
+            <h5>Project title</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+              error.
+            </p>
+
+            <a href="#">See more</a>
+          </div>
+        </div>
       </section>
     </main>
   </body>

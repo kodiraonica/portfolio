@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./main.css" />
-    <title>About me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Antonijina portfolio stranica | About</title>
   </head>
   <body>
     <main>
       <aside>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        <nav>
+          <ul class="list flex">
+            <li class="nav-item">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./about.html" class="active">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </aside>
 
       <section>
-        <img src="./2.png" alt="ovo sam ja" />
+        <h1>Hello, my name is Antonija.</h1>
+        <p class="mb-40">
+          I am a freelance front end developer. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Quidem, velit cumque, magni rerum
+          sapiente quibusdam, laudantium voluptatibus corrupti impedit placeat
+          et. Delectus nihil facere quas quam aspernatur nulla voluptas ex. In
+          my free time I play guitar and with my pets.
+        </p>
+        <h2 class="mb-40">Here are some blog posts I am the most proud of</h2>
 
-        <h1>
-          Hello, my name is Antonija. I am a freelance front end developer.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-          velit cumque, magni rerum sapiente quibusdam, laudantium voluptatibus
-          corrupti impedit placeat et. Delectus nihil facere quas quam
-          aspernatur nulla voluptas ex.
-        </h1>
-        <p>In my free time I play guitar and with my pets.</p>
-        <h2>Here are some blog posts I am the most proud of</h2>
-
-        <ul>
+        <ul class="list">
           <li class="list-item">
-            <a href="https://example.com/" target="_blank"
+            <a href="https://example.com/" target="_blank" class="underline"
               >How I taught myself to code</a
             >
           </li>
 
           <li class="list-item">
-            <a href="https://example.com/" target="_blank">
+            <a href="https://example.com/" target="_blank" class="underline">
               Why should everyone know HTML?
             </a>
           </li>
 
           <li class="list-item">
-            <a href="https://example.com/" target="_blank">
+            <a href="https://example.com/" target="_blank" class="underline">
               Why I decided to become a developer?
             </a>
           </li>
         </ul>
 
-        <h2>I also like to speak at events</h2>
+        <h2 class="mt-40 mb-40">I also like to speak at events</h2>
 
-        <ul>
+        <ul class="list">
           <li>
-            <a href="https://example.com/" target="_blank">
-              How to improve website performance? at<b>Web design meetup</b>
+            <a href="https://example.com/" target="_blank" class="underline">
+              How to improve website performance? at <b>Web design meetup</b>
             </a>
           </li>
 
           <li>
-            <a href="https://example.com/" target="_blank">
-              How to learn to code without any background? at<b
-                >Freecode camp meetup</b
-              >
+            <a href="https://example.com/" target="_blank" class="underline">
+              How to learn to code without any background? at
+              <b>Freecode camp meetup</b>
             </a>
           </li>
         </ul>
