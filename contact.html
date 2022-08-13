@@ -41,22 +41,77 @@
       <section class="h-full">
         <h1 class="mb-40">Contact me via form below</h1>
 
-        <form>
-          <input type="email" placeholder="Your Email" class="control" />
-          <input type="text" placeholder="Your Name" class="control" />
-          <textarea
-            cols="30"
-            rows="10"
-            placeholder="Your message"
-            class="control"
-          ></textarea>
-          <input type="submit" value="Send me a message!" class="control" />
+        <form id="form">
+          <div class="field">
+            <input
+              type="text"
+              name="userName"
+              placeholder="Your Name"
+              id="userName"
+              class="control"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              name="userEmail"
+              id="userEmail"
+              class="control"
+              required
+              placeholder="Your email"
+            />
+          </div>
+          <div class="field">
+            <textarea
+              type="text"
+              name="userMessage"
+              id="userMessage"
+              class="control"
+              required
+              placeholder="Your message"
+              cols="10"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input type="submit" id="button" value="Send" class="control" />
         </form>
+
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+
+        <script type="text/javascript">
+          emailjs.init("user_LOSuz8pR7cowgxlm0LOa5");
+        </script>
       </section>
     </main>
-    <script src="./main.js" type="text/javascript"></script>
     <script>
-      alert("hey");
+      const btn = document.getElementById("button");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "meetantonija";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("Sent!");
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
     </script>
   </body>
 </html>
